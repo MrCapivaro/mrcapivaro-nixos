@@ -122,6 +122,7 @@
 	xclip
 	sxhkd
 	gparted
+	etcher
 	# QoL, Fonts
 	rofi
 	freetype
@@ -129,6 +130,10 @@
 	fontconfig
 	# Gaming
 	flatpak
+  ];
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-12.2.3"
   ];
 
   fonts = {
